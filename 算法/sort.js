@@ -19,7 +19,7 @@ var Sort = {
                 right.push(arr[i]);
             }
         }
-
+	// callee()调用函数自身，不会因为名字的改变而出现错误
         return arguments.callee(left).concat([pivot], arguments.callee(right));
     },
 
